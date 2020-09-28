@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "Pitchy", targets: ["Pitchy-iOS"]),
+        .library(name: "Pitchy", targets: ["Pitchy"]),
     ],
     dependencies: [],
     targets: [
