@@ -13,9 +13,9 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "Pitchy-iOS", dependencies: []),
-        .testTarget(name: "Pitchy-iOS-Tests", dependencies: []),
-        .target(name: "Pitchy-Mac", dependencies: []),
-        .testTarget(name: "Pitchy-Mac-Tests", dependencies: []),
+        .target(name: "Pitchy-iOS", dependencies: [], path: "Source"),
+        .testTarget(name: "Pitchy-iOS-Tests", dependencies: [], path: "Spec"),
+        .target(name: "Pitchy-Mac", dependencies: [], path: "Source"),
+        .testTarget(name: "Pitchy-Mac-Tests", dependencies: [], path: "Spec"),
     ]
 )
