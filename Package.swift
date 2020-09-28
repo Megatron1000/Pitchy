@@ -8,14 +8,11 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "Pitchy-iOS", targets: ["Pitchy-iOS"]),
-        .library(name: "Pitchy-Mac", targets: ["Pitchy-Mac"])
+        .library(name: "Pitchy", targets: ["Pitchy-iOS"]),
     ],
     dependencies: [],
     targets: [
         .target(name: "Pitchy-iOS", dependencies: [], path: "Source"),
         .testTarget(name: "Pitchy-iOS-Tests", dependencies: [], path: "Spec"),
-        .target(name: "Pitchy-Mac", dependencies: [], path: "Source"),
-        .testTarget(name: "Pitchy-Mac-Tests", dependencies: [], path: "Spec"),
     ]
 )
